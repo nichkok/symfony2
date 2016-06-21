@@ -6,7 +6,7 @@ acme_hello:
 demos_blog:
     resource: "@DemosBlogBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /blog
 
 app:
     resource: "@AppBundle/Controller/"
