@@ -1,13 +1,3 @@
-acme_hello:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
-    prefix:   /
-    
-
-demos_blog:
-    resource: "@DemosBlogBundle/Controller/"
-    type:     annotation
-    prefix:   /blog
-
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

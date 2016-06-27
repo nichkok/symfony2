@@ -1,0 +1,6 @@
+<h1>Шаблон который выводит таблицы</h1>
+<table border="1">
+    {% for Goods in Good %}
+        <tr><td>{{ Goods.title }}</td><td>{{ Goods.description }}</td><td>{{ Goods.basename }}</td></tr>
+    {% endfor %}
+</table>
