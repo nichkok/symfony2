@@ -16,8 +16,6 @@ class GoodsRepository extends EntityRepository
 {
     public function showByPricesTypeAction($pricesType)
     {
-        return $this->getEntityManager()->createQuery('SELECT p1.title,p1.description,p3.basename FROm AppBundle:Goods p1 JOIN AppBundle:Prices p2 WITH p1.id=p2.goodsId
-                                                                                                                   JOIN AppBundle:Photo p3 WITH p2.goodsId=p3.goodsId
-                                                                                                                   WHERE p2.priceTypeId=:price_type')->setParameter('price_type',$priceType)->getResult(Query::HYDRATE_OBJECT);
+        return $this->getEntityManager()->createQuery('SELECT p1.title,p1.description,p3.basename FROm AppBundle:Goods p1 JOIN AppBundle:Prices p2 WITH p1.id=p2.goodsId                                        JOIN AppBundle:Photos p3 WITH p2.goodsId=p3.goodsId                                                                                                 WHERE p2.pricesTypeId=:prices_type')->setParameter('prices_type',$pricesType)->getResult(Query::HYDRATE_OBJECT);
     }
 }

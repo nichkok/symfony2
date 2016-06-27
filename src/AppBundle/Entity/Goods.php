@@ -108,9 +108,9 @@ public function __construct()
     /**
      * Remove Prices
      *
-     * @param \Demos\BlogBundle\Entity\Prices $prices
+     * @param \AppBundle\Entity\Prices $prices
      */
-    public function removePrice(\Demos\BlogBundle\Entity\Prices $prices)
+    public function removePrice(AppBundle\Entity\Prices $prices)
     {
         $this->Prices->removeElement($prices);
     }

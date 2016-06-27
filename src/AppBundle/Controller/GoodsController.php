@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: dinobot
+ * Date: 28.04.2016
+ * Time: 14:15
+ */
 
 namespace AppBundle\Controller;
 
@@ -8,7 +13,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class GoodController extends Controller
+class GoodsController extends Controller
 {
     /**
      * @Route("/good/show")
